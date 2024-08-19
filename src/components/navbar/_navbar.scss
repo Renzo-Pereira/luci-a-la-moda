@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+nav {
+  div {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+    img {
+      width: 50px;
+    }
+    h2{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+    }
+  }
+  ul {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    font-size: 1.5rem;
+    list-style: none;
+    border-top: 0.1rem solid rgb(0, 0, 0, 10%);
+    border-bottom: 0.1rem solid rgb(0, 0, 0, 10%);
+    font-family: "Montserrat";
+    font-weight: 300;
+  }
+}

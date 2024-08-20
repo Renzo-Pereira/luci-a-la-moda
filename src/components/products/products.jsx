@@ -1,21 +1,26 @@
 import { useEffect, useState } from "react";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../firebase/config";
+import { useParams } from "react-router-dom";
 
 const Products = () => {
   const [productos, setProductos] = useState([]);
+  const genero = useParams().genero;
 
   useEffect(() => {
     const productosRef = collection(db, "productos");
+    let q = genero
+    ? query(productosRef, where("genero", "==", genero))
+    : productosRef;
 
-    getDocs(productosRef).then((resp) => {
+    getDocs(q).then((resp) => {
       setProductos(
         resp.docs.map((doc) => {
           return { ...doc.data(), id: doc.id };
         })
       );
     });
-  }, []);
+  }, [genero]);
 
   return (
     <main>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav>
-      <Link to={"/inicio"}>
+      <Link to={"/"}>
         <div className="logo">
           <h2>LUCÍ A LA MODA</h2>
           <img src={logo} alt="logo" />

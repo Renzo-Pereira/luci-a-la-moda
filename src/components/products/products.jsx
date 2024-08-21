@@ -27,10 +27,12 @@ const Products = () => {
       {productos.map((prod) => (
         <article>
           <img key={prod.nombre} src={prod.img} alt={prod.nombre} />
+          <h4 className="marca">{prod.marca}</h4>
           <h3>{prod.nombre}</h3>
           <h4>${prod.precio}</h4>
         </article>
       ))}
+            <a href="https://wa.me/+59898851009/?text=Hola! Queria hacerte una consulta..." className="botonWhatsapp"><i className="bi bi-whatsapp"></i></a>
     </main>
   );
 };

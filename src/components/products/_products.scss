@@ -1,11 +1,22 @@
 main{
-    padding-left: 5rem;
-    padding-right: 5rem;
     display: flex;
-    justify-content: space-around;
+    padding: 1rem;
     flex-wrap: wrap;
+    justify-content: space-around;
     article{
+        font-size: 14px;
+        width: 150px;
         img{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1367px) {
+    main{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        article{
             width: 300px;
         }
     }

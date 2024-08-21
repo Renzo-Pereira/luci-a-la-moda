@@ -5,14 +5,22 @@ const Navbar = () => {
   return (
     <nav>
       <Link to={"/inicio"}>
-        <h2>LUCÍ A LA MODA</h2>
-        <img src={logo} alt="logo" />
+        <div className="logo">
+          <h2>LUCÍ A LA MODA</h2>
+          <img src={logo} alt="logo" />
+        </div>
       </Link>
       <ul>
         <div className="border">
-        <li><Link to={"/inicio"}>Inicio</Link></li>
-        <li><Link to={"/inicio/hombre"}>Hombre</Link></li>
-        <li><Link to={"/inicio/dama"}>Dama</Link></li>
+          <li>
+            <Link to={"/"}>Inicio</Link>
+          </li>
+          <li>
+            <Link to={"/hombre"}>Hombre</Link>
+          </li>
+          <li>
+            <Link to={"/dama"}>Dama</Link>
+          </li>
         </div>
       </ul>
     </nav>

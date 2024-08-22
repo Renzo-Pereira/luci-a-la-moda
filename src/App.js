@@ -1,4 +1,5 @@
 import "./App.css";
+import Details from "./components/details/details";
 import Footer from "./components/footer/footer";
 import Navbar from "./components/navbar/navbar";
 import Products from "./components/products/products";
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Products />} />
         <Route path="/:genero" element={<Products />} />
+        <Route path="/details/:id" element={<Details />} />
       </Routes>
       <Footer />
     </BrowserRouter>

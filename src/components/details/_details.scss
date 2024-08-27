@@ -1,6 +1,9 @@
 .details {
   display: block;
   width: 100%;
+  .mini{
+    display: none;
+  }
   img {
     width: 100%;
   }
@@ -35,18 +38,46 @@
     font-weight: 300;
     font-style: normal;
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    background-color: #000;
+    opacity: 0.7;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: green;
+  }
 }
 
 
 @media (min-width: 1367px) {
     .details{
         display: flex;
+        justify-content: center;
         gap: 2rem;
-        img{
-            width: 500px;
+        .mini{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 629px;
+          img{
+            height: 150px;
+          }
         }
-        div{
-
+        .swiper {
+          width: 500px;
+          margin: 0;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: block;
+          color: green;
+        }
+        img{
+            width: 100%;
         }
     }
 }

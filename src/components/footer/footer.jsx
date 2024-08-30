@@ -4,6 +4,16 @@ const Footer = () => {
   return (
     <footer>
       <article className="contacto">
+        <div>
+          <h2>¿Quienes somos?</h2>
+          <p>
+            Somos emprendedores Uruguayos con mas de 12 años de experiencia en
+            comercio exterior (Impo & Expo) Manejamos nuestro stock desde Miami
+            donde se encuentra nuestro deposito. De esta manera reducimos los
+            costos logísticos.
+          </p>
+        </div>
+        <div className="redes">
         <h4>
           <a href="https://www.facebook.com/profile.php?id=61563661704682">
             <i className="bi bi-facebook"></i>
@@ -24,23 +34,24 @@ const Footer = () => {
             <p>@luci_a_la_moda</p>
           </a>
         </h4>
+        </div>
       </article>
       <article className="info">
-        <h2>¿Como comprar?</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi soluta
-          et iste dolorem ex enim vero illo laborum consequuntur animi, aperiam
-          odit, adipisci molestias? A recusandae necessitatibus officia quaerat
-          molestiae quis laboriosam mollitia nostrum impedit similique quos quod
-          blanditiis doloremque, hic deleniti unde? Natus doloribus animi
-          perferendis illo repellendus voluptas veritatis eius cupiditate libero
-          quos maiores a quidem officia sed delectus, nostrum eaque ratione.
-          Recusandae ea, ratione ipsam nulla debitis voluptas, assumenda, eaque
-          tenetur minima sint facere laboriosam ipsa? Tempora soluta ducimus
-          repellendus quibusdam, deleniti vitae, inventore itaque, deserunt ex
-          id aspernatur! Molestiae dolorum quia repellendus quisquam distinctio,
-          vitae consectetur?
-        </p>
+        <div>
+          <h2>¿Como comprar?</h2>
+          <p>
+            Selecciona el modelo que mas te guste, confirma el talle con
+            nosotros mediante Instagram o Whatsapp. Despachamos desde Miami y en
+            7-10 dias te lo entregamos en tu domicilio.
+          </p>
+        </div>
+        <div>
+          <h2>Formas de pago</h2>
+          <p>
+            Formas de pago Transferencia bancaria (BROU, ITAU, SANTANDER)
+            Mercadopago (QR) No es necesario señar o pagar por adelantado.
+          </p>
+        </div>
       </article>
       <article className="logotipo">
         <h2>Lucí a la moda</h2>

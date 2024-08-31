@@ -22,14 +22,15 @@ footer {
             #cc2366 75%,
             #bc1888 100%
           );
+          -webkit-background-clip: text;
           background-clip: text;
           color: transparent;
         }
-        .bi-whatsapp{
+        .bi-whatsapp {
           color: #25d366;
         }
-        .bi-facebook{
-          color: #3b5998 ;
+        .bi-facebook {
+          color: #3b5998;
         }
         p {
           display: none;
@@ -42,10 +43,10 @@ footer {
       }
     }
   }
-  .contacto{
+  .contacto {
     display: flex;
     flex-direction: column-reverse;
-    .redes{
+    .redes {
       display: flex;
     }
   }
@@ -81,10 +82,10 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-        .redes{
-          flex-direction: column;
-          gap: 1rem;
-        }
+      .redes {
+        flex-direction: column;
+        gap: 1rem;
+      }
       h4 {
         margin: 0;
         font-size: 1.5rem;

@@ -23,11 +23,11 @@ const Products = () => {
   }, [genero]);
 
   return (
-    <main>
+    <main role="main">
       {productos.map((prod) => (
-        <article>
-          <Link to={`/details/${prod.id}`}>
-            <img key={prod.nombre} src={prod.img} alt={prod.nombre} />
+        <article key={prod.id}>
+          <Link to={`/details/${prod.slug}`}>
+            <img src={prod.img} alt={`Imagen de ${prod.nombre}`} />
             <h4 className="marca">{prod.marca}</h4>
             <h3>{prod.nombre}</h3>
             <h4>${prod.precio}</h4>

@@ -1,8 +1,8 @@
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.webp";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer role="contentinfo">
       <article className="contacto">
         <div>
           <h2>¿Quienes somos?</h2>
@@ -15,21 +15,21 @@ const Footer = () => {
         </div>
         <div className="redes">
         <h4>
-          <a href="https://www.facebook.com/profile.php?id=61563661704682">
+        <a href="https://www.facebook.com/profile.php?id=61563661704682" aria-label="Enlace a Facebook de Lucí a la moda">
             <i className="bi bi-facebook"></i>
             <p>Luci a la moda</p>
           </a>
         </h4>
 
         <h4>
-          <a href="https://wa.me/+59898851009/?text=Hola! Queria hacerte una consulta...">
+        <a href="https://wa.me/+59898851009/?text=Hola! Queria hacerte una consulta..." aria-label="Enlace a WhatsApp de Lucí a la moda">
             <i className="bi bi-whatsapp"></i>
             <p>+598 98 851 009</p>
           </a>
         </h4>
 
         <h4>
-          <a href="https://www.instagram.com/luci_a_la_moda/">
+        <a href="https://www.instagram.com/luci_a_la_moda/" aria-label="Enlace a Instagram de Lucí a la moda">
             <i className="bi bi-instagram"></i>
             <p>@luci_a_la_moda</p>
           </a>
@@ -48,7 +48,7 @@ const Footer = () => {
         <div>
           <h2>Formas de pago</h2>
           <p>
-            Formas de pago Transferencia bancaria (BROU, ITAU, SANTANDER)
+            Transferencia bancaria (BROU, ITAU, SANTANDER)
             Mercadopago (QR) No es necesario señar o pagar por adelantado.
           </p>
         </div>

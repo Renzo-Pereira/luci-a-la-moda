@@ -1,59 +1,65 @@
 main {
   display: flex;
-  padding: 1rem;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 1rem;
+
   article {
-    font-size: 14px;
     width: 150px;
     margin-top: 1rem;
+    font-size: 14px;
+
     a {
       color: black;
       text-decoration: none;
+
       img {
         width: 100%;
       }
-      h3,
-      h4 {
+
+      h3, h4 {
+        margin: 0.5rem 0;
         font-family: "Lexend", sans-serif;
         font-weight: 300;
         font-style: normal;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
       }
+
       .marca {
         font-family: "Crimson Text", serif;
         font-weight: 700;
-        font-style: normal;
+        text-transform: capitalize;
       }
     }
   }
+
   .botonWhatsapp {
     position: fixed;
     bottom: 5%;
     right: 8%;
+
     i {
       font-size: 2rem;
       color: white;
       padding: 0.6rem;
       background-color: #25d366;
-      border: solid 0.1rem #25d366;
-      border-radius: 100%;
+      border: 0.1rem solid #25d366;
+      border-radius: 50%;
     }
   }
 }
 
 @media (min-width: 1200px) {
   main {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 0 5rem;
+
     article {
       width: 300px;
     }
+
     .botonWhatsapp {
-      position: fixed;
       bottom: 6%;
       right: 3%;
+
       i {
         font-size: 2.5rem;
       }
